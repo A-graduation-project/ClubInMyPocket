@@ -2,7 +2,7 @@
 ClubInMyPocket
 
 ### Front Folder Structure
-*App.js (root)
+- App.js (root)
 - src
   - screens
   - components
