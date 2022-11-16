@@ -37,7 +37,7 @@ ClubInMyPocket
   - utility
     - date.js
 
-##### build.gradle 수정
+##### - build.gradle 수정
 path : android/app/build.gradle - 최하단
 
 ```
