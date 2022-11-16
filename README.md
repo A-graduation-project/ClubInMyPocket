@@ -36,3 +36,15 @@ ClubInMyPocket
     - TransparentCircleButton.js
   - utility
     - date.js
+
+##### build.gradle 수정
+path : android/app/build.gradle - 최하단
+
+```
+project.ext.vectoricons = [
+    iconFontNames: [ 'MaterialIcons.ttf' ]
+]
+
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+```
+코드 추가
