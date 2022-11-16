@@ -1,16 +1,38 @@
 # ClubInMyPocket
 ClubInMyPocket
 
-### Front Folder Structure
+### Front Structure
 - App.js (root)
 - src
   - screens
-  - components
+    - Home.js
+    - MyPage.js
+    - SignIn.js
+    - SignUp.js 
+    - DepartmentSelection.js
     - Ad
-    - Request
     - Club
+      - ClubInfo.js
+      - ClubCalendar
+      - ClubActivities.js
+      - ClubRequest.js
+      - ClubReview.js
+    - Request
+  - components
+    - CalendarView.js
+    - Camera.js
+    - Ad
+      - AdList.js
+      - AdListItem.js
+      - AdPostSerachHeader.js
+      - AdPostWritingEditor.js
+      - AdPostWritingHeader.js
+    - Club
+    - Request
   - contexts
   - assets/images
+    - logo.png 
   - UI
+    - TransparentCircleButton.js
   - utility
     - date.js
