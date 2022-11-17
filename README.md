@@ -50,3 +50,29 @@ project.ext.vectoricons = [
 apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 ```
 코드 추가
+
+
+
+
+
+###Backend Structure
+
+- app.js(root)
+- config.js
+- router
+  - auth.js
+  - club.js
+- controller
+  - auth.js
+  - club.js
+- data
+  - auth.js
+  - club.js
+- db
+  - database.js
+- middleware
+  - auth.js
+  - multer.js
+  - validator.js
+- uploads
+  - filename.png ...
