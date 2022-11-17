@@ -10,6 +10,9 @@ import AdPostSearchScreen from '../screens/Ad/AdPostSearchScreen';
 import DepartmentSelection from '../screens/DepartmentSelection';
 import CPU from '../screens/Club/CPU';
 import ClubInfo from '../screens/Club/ClubInfo';
+import SearchHeader from '../components/Ad/SearchHeader'
+
+
 
 const Stack = createNativeStackNavigator();
 
@@ -25,7 +28,10 @@ export default function HomeStack() {
       <Stack.Screen name="SignUp" component={SignUp} options={{headerShown: false}}/>
       <Stack.Screen name="AdBulletinBoard" component={AdBulletinBoard} options={{headerShown: false}}/>
       <Stack.Screen name="AdPostWriting" component={AdPostWriting} options={{headerShown: false}}/>
-      <Stack.Screen name="AdPostSearchScreen" component={AdPostSearchScreen} options={{headerShown: false}}/>
+      <Stack.Screen name="AdPostSearchScreen" component={AdPostSearchScreen} options={{
+          title: '검색',
+          headerTitle: () => <SearchHeader />,
+      }} />
       <Stack.Screen
         name="DepartmentSelection"
         component={DepartmentSelection}
