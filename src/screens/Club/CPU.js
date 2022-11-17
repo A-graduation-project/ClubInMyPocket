@@ -12,9 +12,9 @@ import {
 import {TabView, TabBar, SceneMap} from 'react-native-tab-view';
 import ClubInfo from './ClubInfo';
 import CalendarView from '../../components/Calendar';
-import ActivityHistory from './ActivityHistory';
-import Review from './Review';
-import Inquiry from './Inquiry';
+import ClubActivities from './ClubActivities';
+import ClubReview from './ClubReview';
+import ClubInquiry from './ClubInquiry';
 
 // import Camera from '../components/Camera';
 
@@ -98,16 +98,16 @@ const SecondRoute = () => (
 );
 
 const ThirdRoute = () => <View style={{flex: 1, backgroundColor: 'white'}}>
-  <ActivityHistory />
+  <ClubActivities />
 </View>;
 
 const FourthRoute = () => <View style={{flex: 1, backgroundColor: 'white'}}>
-  <Review />
+  <ClubReview />
 </View>;
 
 const FifthRoute = () => (
   <View style={{flex: 1, backgroundColor: 'white'}}>
-    <Inquiry />
+    <ClubInquiry />
   </View>
 );
 

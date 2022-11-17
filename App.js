@@ -6,6 +6,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 import HomeStack from './src/components/HomeStack';
 import MyPageStack from './src/components/MyPageStack';
+import {LogContextProvider} from './src/contexts/LogContext';
 
 
 const BottomTab = createBottomTabNavigator();
@@ -50,7 +51,9 @@ function BottomTabNavigator() {
 export default function App() {
   return (
     <NavigationContainer>
+    <LogContextProvider>
       <BottomTabNavigator />
+    </LogContextProvider>
     </NavigationContainer>
   );
 }

@@ -21,17 +21,17 @@ export default function HomeStack() {
         component={Home}
         options={{headerShown: false}}
       />
-      <Stack.Screen name="SignIn" component={SignIn} />
-      <Stack.Screen name="SignUp" component={SignUp} />
-      <Stack.Screen name="AdBulletinBoard" component={AdBulletinBoard} />
-      <Stack.Screen name="AdPostWriting" component={AdPostWriting} />
-      <Stack.Screen name="AdPostSearchScreen" component={AdPostSearchScreen} />
+      <Stack.Screen name="SignIn" component={SignIn} options={{headerShown: false}}/>
+      <Stack.Screen name="SignUp" component={SignUp} options={{headerShown: false}}/>
+      <Stack.Screen name="AdBulletinBoard" component={AdBulletinBoard} options={{headerShown: false}}/>
+      <Stack.Screen name="AdPostWriting" component={AdPostWriting} options={{headerShown: false}}/>
+      <Stack.Screen name="AdPostSearchScreen" component={AdPostSearchScreen} options={{headerShown: false}}/>
       <Stack.Screen
         name="DepartmentSelection"
         component={DepartmentSelection}
-      />
-      <Stack.Screen name="CPU" component={CPU} />
-      <Stack.Screen name="ClubInfo" component={ClubInfo} />
+        options={{headerShown: false}}/>
+      <Stack.Screen name="CPU" component={CPU} options={{headerShown: false}}/>
+      <Stack.Screen name="ClubInfo" component={ClubInfo} options={{headerShown: false}}/>
     </Stack.Navigator>
   );
 }
