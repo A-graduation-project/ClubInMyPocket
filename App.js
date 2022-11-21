@@ -6,6 +6,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 import HomeStack from './src/components/HomeStack';
 import MyPageStack from './src/components/MyPageStack';
+import { UserContextProvider } from './src/contexts/UserContext';
 import {LogContextProvider} from './src/contexts/LogContext';
 import { SearchContextProvider } from './src/contexts/SearchContext';
 
@@ -50,12 +51,14 @@ function BottomTabNavigator() {
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <SearchContextProvider>
-        <LogContextProvider>
-          <BottomTabNavigator />
-        </LogContextProvider>
-      </SearchContextProvider>
-    </NavigationContainer>
+    <UserContextProvider>
+      <NavigationContainer>
+        <SearchContextProvider>
+          <LogContextProvider>
+            <BottomTabNavigator />
+          </LogContextProvider>
+        </SearchContextProvider>
+      </NavigationContainer>
+    </UserContextProvider>
   );
 }

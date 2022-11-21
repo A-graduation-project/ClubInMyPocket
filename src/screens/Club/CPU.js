@@ -86,7 +86,7 @@ import ClubInquiry from './ClubInquiry';
 
 const FirstRoute = () => (
   <View style={{flex: 1, backgroundColor: 'white'}}>
-    <ClubInfo />
+    <ClubInfo name="ClubInfo"/>
     {/* <Camera /> */}
   </View>
 );

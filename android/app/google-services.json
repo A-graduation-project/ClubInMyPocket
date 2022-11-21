@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "356525877317",
+    "project_id": "clubinmypocket-9dea3",
+    "storage_bucket": "clubinmypocket-9dea3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356525877317:android:bd7c7346c888c6635b9b2c",
+        "android_client_info": {
+          "package_name": "com.clubinmypocket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356525877317-209sb4orsl21lo5c2h7coc1qeq7mvcki.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.clubinmypocket",
+            "certificate_hash": "44e4b2748068f042773261e4f75f25cdc0350ebc"
+          }
+        },
+        {
+          "client_id": "356525877317-5sko8gaib62k6f5k29k5tlkarih8pmkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCROFRp8KGLiJOqwESZSV7PdTJ2P2EZdF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356525877317-5sko8gaib62k6f5k29k5tlkarih8pmkl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

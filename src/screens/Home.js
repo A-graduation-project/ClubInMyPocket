@@ -1,9 +1,11 @@
 import {React, useCallback} from 'react';
 import {View, Text, StyleSheet, Pressable, Image} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
+import { useUserContext } from '../contexts/UserContext';
 
 export default function Home({navigation}) {
   const signInIcon = <Icon name="log-in-outline" size={30} color={'black'} />;
+  const {user} = useUserContext();
 
   return (
     <View style={styles.container}>
@@ -13,7 +15,7 @@ export default function Home({navigation}) {
             navigation.push('SignIn');
           })}>
           <View style={styles.signIn}>
-            {/* {isSignedIn ? <Profile /> : <SignIn />} */}
+            <Text>Hello</Text>
             <Text style={styles.signInText}>{signInIcon}</Text>
           </View>
         </Pressable>
@@ -109,33 +111,35 @@ const styles = StyleSheet.create({
     margin: -20,
   },
   buttonText: {
+    color: 'black',
+    // fontWeight: 'bold',
     fontSize: 20,
   },
   button1: {
-    borderColor: '#ffdab9',
-    borderWidth: 1,
+    borderColor: 'black',
+    borderWidth: 2,
     padding: 35,
     margin: 5,
     borderRadius: 10,
   },
   button2: {
-    borderColor: '#ffdab9',
-    borderWidth: 1,
+    borderColor: 'black',
+    borderWidth: 2,
     padding: 35,
     margin: 5,
     borderRadius: 10,
   },
   button3: {
     // backgroundColor: '#ffdab9',
-    borderColor: '#ffdab9',
-    borderWidth: 1,
+    borderColor: 'black',
+    borderWidth: 2,
     padding: 35,
     margin: 5,
     borderRadius: 10,
   },
   button4: {
-    borderColor: '#ffdab9',
-    borderWidth: 1,
+    borderColor: 'black',
+    borderWidth: 2,
     padding: 35,
     margin: 5,
     borderRadius: 10,
