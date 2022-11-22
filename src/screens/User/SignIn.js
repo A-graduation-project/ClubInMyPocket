@@ -7,6 +7,7 @@ import SignInForm from '../../components/User/SignForm';
 import { signIn, signUp } from '../../../lib/auth';
 import { getUser } from '../../../lib/users';
 import { useUserContext } from '../../contexts/UserContext';
+import GoBackButton from '../../components/GoBackButton';
 
 export default function SignInScreen({navigation, route}) {
   const {isSignUp} = route.params || {};
@@ -65,6 +66,7 @@ export default function SignInScreen({navigation, route}) {
     <KeyboardAvoidingView
       style={styles.keyboardAvoidingView}
         behavior={Platform.select({ios: 'padding'})}>
+        <GoBackButton />
         <SafeAreaView style={styles.fullscreen}>
           <Text style={styles.text}>ClubInMyPocket</Text>
           <View style={styles.form}>

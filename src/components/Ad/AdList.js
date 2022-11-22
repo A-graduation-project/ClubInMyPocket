@@ -30,9 +30,10 @@ export default function FeedList({logs, onScrolledToBottom}) {
 const styles = StyleSheet.create({
     block: {flex: 1},
     separator: {
-    backgroundColor: '#e0e0e0',
-    height: 1,
-    width: '100%',
+      backgroundColor: '#e0e0e0',
+      height: 1,
+      width: '100%',
+      marginHorizontal: 15,
   },
 });
 

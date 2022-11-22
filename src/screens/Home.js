@@ -1,10 +1,10 @@
 import {React, useCallback} from 'react';
 import {View, Text, StyleSheet, Pressable, Image} from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
 import { useUserContext } from '../contexts/UserContext';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 export default function Home({navigation}) {
-  const signInIcon = <Icon name="log-in-outline" size={30} color={'black'} />;
+  const signInIcon = <Icon name="log-in-outline" size={35} color={'black'} />;
   const {user} = useUserContext();
 
   return (
@@ -15,7 +15,6 @@ export default function Home({navigation}) {
             navigation.push('SignIn');
           })}>
           <View style={styles.signIn}>
-            <Text>Hello</Text>
             <Text style={styles.signInText}>{signInIcon}</Text>
           </View>
         </Pressable>
@@ -85,7 +84,9 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
   },
   signInText: {
+    // fontSize: 20,
     marginRight: 10,
+    // color: 'black',
   },
   drawingContainer: {
     flex: 2,
