@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/portpolio/static/js/main.cbec92a6.js",
+    "index.html": "/portpolio/index.html",
+    "main.cbec92a6.js.map": "/portpolio/static/js/main.cbec92a6.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.cbec92a6.js"
+  ]
+}
