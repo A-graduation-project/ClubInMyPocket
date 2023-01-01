@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/portpolio/static/js/main.cbec92a6.js",
-    "index.html": "/portpolio/index.html",
-    "main.cbec92a6.js.map": "/portpolio/static/js/main.cbec92a6.js.map"
+    "main.js": "/movie_app/static/js/main.cbec92a6.js",
+    "index.html": "/movie_app/index.html",
+    "main.cbec92a6.js.map": "/movie_app/static/js/main.cbec92a6.js.map"
   },
   "entrypoints": [
     "static/js/main.cbec92a6.js"
